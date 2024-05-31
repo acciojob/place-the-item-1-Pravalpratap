@@ -1,2 +1,34 @@
+/* Container for the items */
+.holder {
+    display: flex;             /* Enables Flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+    flex-wrap: wrap;           /* Allows items to wrap to the next row */
+    padding: 0;                /* No padding, to ensure items touch the edges */
+    margin: 0 10px;            /* Small margin on both sides to align the items with the edge */
+    box-sizing: border-box;    /* Includes padding in the total width calculation */
+}
 
-/* Your CSS Code here. */
+/* Individual items */
+.item {
+    flex: 0 1 calc(33.33% - 50px); /* Sets width of each item with space for margins */
+    height: 100px;             /* Specific height for each item */
+    margin: 10px 0;            /* Vertical spacing between rows */
+    box-sizing: border-box;    /* Includes padding and border in the total width calculation */
+    text-align: center;        /* Center text inside each item */
+    display: flex;             /* Enables Flexbox layout for the item */
+    justify-content: center;   /* Centers content horizontally */
+    align-items: center;       /* Centers content vertically */
+}
+
+/* Colors for individual items */
+.item1 {
+    background-color: green;   /* First item color */
+}
+
+.item2 {
+    background-color: red;     /* Second item color */
+}
+
+.item3 {
+    background-color: blue;    /* Third item color */
+}
